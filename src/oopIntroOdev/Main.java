@@ -4,24 +4,24 @@ public class Main {
 	
 	public static void main(String[]args) {
 	
-		Instructor instructor1 = new Instructor (1, "Engin", "Demiro�");
+		Instructor instructor1 = new Instructor (1, "Engin", "Demirog");
 		
 		Instructor instructor2 = new Instructor();
 		instructor2.id = 2;
 		instructor2.instructorName = "Kerem";
-		instructor2.instructorSurname = "Var��";
+		instructor2.instructorSurname = "Varis";
 		
 		Instructor [] instructors = {instructor1, instructor2};
 	
-		Course course1 = new Course (1, "Yaz�l�m Geli�tirme Kursu", "Java+React ", "�cretsiz ");
+		Course course1 = new Course (1, "Yazilim Gelistirme Kursu", "Java+React ", "Ucretsiz ");
 		
 		Course course2 = new Course ();
 		course2.id = 2;
-		course2.courseName = "Yaz�l�m Geli�tirme Kursu";
+		course2.courseName = "Yazilim Gelistirme Kursu";
 		course2.courseDetails = "C#+ANGULAR";
-		course2.priceDetails = "�cretsiz";
+		course2.priceDetails = "Ucretsiz";
 		
-		Course course3 = new Course (3, "Programlamaya Giri�", "Temel Kurs", "�cretsiz");
+		Course course3 = new Course (3, "Programlamaya Giris", "Temel Kurs", "Ucretsiz");
 	
 		Course [] courses = {course1,course2,course3};
 	
@@ -29,13 +29,13 @@ public class Main {
 			System.out.println(course.courseName + " " + course.courseDetails);
 		}
 		
-		System.out.println("Toplam Kurs Say�s�: " + courses.length);
+		System.out.println("Toplam Kurs Sayisi: " + courses.length);
 	
 		for (Instructor instructor : instructors) {
 			System.out.println(instructor.instructorName + " " + instructor.instructorSurname);
 		}
 		
-		System.out.println("Toplam E�itmen Say�s�: " + instructors.length);
+		System.out.println("Toplam Egitmen Sayisi: " + instructors.length);
 		
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.chooseAnInstructor(instructor1);
