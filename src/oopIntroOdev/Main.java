@@ -8,8 +8,8 @@ public class Main {
 		
 		Instructor instructor2 = new Instructor();
 		instructor2.id = 2;
-		instructor2.instructorName = "Betul";
-		instructor2.instructorSurname = "Engin";
+		instructor2.instructorName = "Kerem";
+		instructor2.instructorSurname = "Var��";
 		
 		Instructor [] instructors = {instructor1, instructor2};
 	
